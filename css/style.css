@@ -1,0 +1,113 @@
+/* Whole document: */
+body{
+  font-family: Helvetica;
+  font-size: 12pt;
+}
+/* Headers : non tous les titres de même taille c'est pas bon !*/
+/* h1,h2,h3,h4,h5,h6{
+  font-size: 24pt;
+}*/
+h1{
+  font-size: 180%;
+  f/*ont-weight:bold;*/
+}
+h2{
+  font-size: 150%;
+}
+h3{
+  font-size: 130%;
+}
+
+species {
+    font-size: 200%;
+}
+/* -------------------------------- */
+/* encadrés https://www.e-monsite.com/pages/tutoriels/configuration-avancee-du-site/comment-encadrer-un-texte.html */
+.encadrer-un-contenu{ border: 1px solid black; padding: 5px;} 
+/* -------------------------------- */
+/*les paragaraphes sont justifiés*/
+p {
+  /*color: blue;*/
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* -------------------------------- */
+/*adapte la couleur d'une boite success
+https://www.rapidtables.org/fr/web/color/html-color-codes.html*/
+.success-custom{
+  background-color: #FFFDE6; 
+  color:#000000;
+}
+/* #FFFFE0 ; #FFFACC*/
+
+/* -------------------------------- */
+/* formater le tableau de la page index */
+.tabindex{
+/*   margin-left:auto;
+   margin-right:auto; */
+   width: 70%;
+   font-size: 110%;
+   text-justify: inter-word;
+   /*background-color: #FFFDE6;*/
+}
+/* -------------------------------- */
+legen {
+  font-size: small;
+	font-weight:bold;
+	line-height: 7px;
+/*	line-height: 7px;*/
+}
+
+.imageflottanteG
+{
+   float: left;
+   padding-right: 20px;
+    padding-bottom: 8px;
+	/*font-size: small;
+	font-weight:bold;
+	width: auto;/*200px*/
+  /*  
+	margin: auto;
+    text-align: center;*/
+}
+.imageflottanteD
+{
+   float: right;
+   /*padding:10px;*/
+    padding-left: 40px;
+    padding-bottom: 8px;
+}
+
+/* *********************************** */
+
+
+/* Cette partie pour avoir une barre de menu de couleur homogène */
+/* # source : https://stackoverflow.com/questions/62793492/website-in-rmarkdown-navbar-changes-color-between-index-and-other-pages #ffffff*/
+
+
+/* sauv dessous */
+
+/*.navbar-inverse {
+  background-color: #222;
+}
+.navbar-inverse .navbar-brand {
+  color: #9d9d9d;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #9d9d9d;
+}
+.navbar-inverse .navbar-nav>.active>a {
+  background-color: #222;
+}
+.list-group-item.active {
+  background-color: #222;
+  border-color: #222;
+}
+item.active, .list-group-item.active:hover {
+  background-color: #222;
+  border-color: #222;
+}*/
+
+/* -------------------------------- */
+
+/* -------------------------------- */
