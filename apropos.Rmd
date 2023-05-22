@@ -1,0 +1,64 @@
+---
+title: " "
+author: "Jean-Pierre Rossi"
+date: ""
+output:
+  html_document:
+    css: css/style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<!-- <img src="files/pic2.jpg" style="width:30%"> -->
+
+<!-- <div class="imageflottanteD" style="height=377px ; width=200px"> -->
+<div class="imageflottanteD" style="height=500px ; width=200px">
+<img src="files/pic2c.png" title="JPR" alt= "JPR" width=300 style="padding:1px;border:thin solid white" >
+<br />
+<legen></legen>
+</div>
+
+## Intérêts
+
+Mes centres d'intérêt portent sur les ravageurs forestiers et agricoles, l'écologie spatiale et le risque phytosanitaire.
+
+- Ecologie spatiale
+- Entomologie forestière et agricole
+- Modélisation de niche écologique
+- Changement global et risque phytosanitaire
+
+## Institution
+
+Institut national de recherche pour l’agriculture, l’alimentation et l’environnement <a href="https://www.inrae.fr/">inrae</a>
+
+## Laboratoire
+
+Inrae - Centre de Biologie pour la Gestion des Populations (CBGP), 755 avenue du Campus Agropolis, 34988 Montferrier sur Lez, France
+
+## Contact
+
+tel : 33 (0) 4 30 63 04 30
+
+e-mail : Jean-Pierre.Rossi@inrae.fr
+
+orcid : [0000-0002-8139-1116](https://orcid.org/0000-0002-8139-1116)
+
+## Expérience
+
+- Directeur de recherche (DR1) Inrae (Juil 2019 – présent)
+
+- Chef de département adjoint Santé des Plantes et Environnement (Avr 2017 – Sept 2020)
+
+- Directeur d'unité adjoint - Centre de Biologie pour la Gestion des Populations (Jan 2015 – Jan 2017)
+
+- Directeur de recherche (DR2) Inrae (Jan 2013 – Juil 2019)
+
+- Chargé de recherche (CR1) Inrae (Sept 2003 – Jan 2013)
+
+- Maître de conférences Université Pierre et Marie Curie (Sept 1998 – Sept 2003)
+
+---
+`r format(Sys.time(), "%d %B, %Y")`
+
