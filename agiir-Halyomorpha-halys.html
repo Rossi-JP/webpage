@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="" />
+
+
+<title>La punaise diabolique - Halyomorpha halys (Stål, 1855)</title>
+
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
+<link rel="shortcut icon" href="im0/ladybeetle-32x32.png" />
+
+
+
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CRISE</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Accueil
+  </a>
+</li>
+<li>
+  <a href="arthemis.html">
+    <span class="fa fa-database"></span>
+     
+    Arthemis
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-bug"></span>
+     
+    AGIIR
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="agiir.html">Présentation</a>
+    </li>
+    <li>
+      <a href="agiir-Aromia-bungii.html">Longicorne à col rouge - Aromia bungii</a>
+    </li>
+    <li>
+      <a href="agiir-Halyomorpha-halys.html">Punaise diabolique - Halyomorpha halys</a>
+    </li>
+    <li>
+      <a href="agiir-Lycorma-delicatula.html">Fulgore tacheté - Lycorma delicatula</a>
+    </li>
+    <li>
+      <a href="agiir-Popillia-japonica.html">Scarabée japonais - Popillia japonica</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-flask"></span>
+     
+    Cartes
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="cartes/carte-Hh.html">Punaise diabolique - Halyomorpha halys</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="publications.html">
+    <span class="fa fa-graduation-cap"></span>
+     
+    Publications
+  </a>
+</li>
+<li>
+  <a href="especes.html">
+    <span class="fa fa-sort-alpha-asc"></span>
+     
+    Espèces
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">La punaise diabolique - <em>Halyomorpha
+halys</em> (Stål, 1855)</h1>
+<h4 class="author"></h4>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#présentation-de-lespèce"
+id="toc-présentation-de-lespèce"><span
+class="toc-section-number">1</span> Présentation de l’espèce</a>
+<ul>
+<li><a href="#critères-de-reconnaissance-de-la-punaise-diabolique"
+id="toc-critères-de-reconnaissance-de-la-punaise-diabolique"><span
+class="toc-section-number">1.1</span> Critères de reconnaissance de la
+punaise diabolique</a></li>
+<li><a href="#cycle-de-développement"
+id="toc-cycle-de-développement"><span
+class="toc-section-number">1.2</span> Cycle de développement</a></li>
+<li><a href="#plantes-hôtes-et-dégâts"
+id="toc-plantes-hôtes-et-dégâts"><span
+class="toc-section-number">1.3</span> Plantes hôtes et dégâts</a></li>
+<li><a href="#contrôle-des-populations-dans-les-cultures"
+id="toc-contrôle-des-populations-dans-les-cultures"><span
+class="toc-section-number">1.4</span> Contrôle des populations dans les
+cultures</a></li>
+<li><a href="#nuisances-domestiques"
+id="toc-nuisances-domestiques"><span
+class="toc-section-number">1.5</span> Nuisances domestiques</a></li>
+<li><a href="#historique-de-linvasion"
+id="toc-historique-de-linvasion"><span
+class="toc-section-number">1.6</span> Historique de l’invasion</a></li>
+</ul></li>
+</ul>
+</div>
+
+<!-- <species>La punaise diabolique - *Halyomorpha halys* (Stål, 1855)</species> -->
+<div id="présentation-de-lespèce" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Présentation de
+l’espèce</h1>
+<p>
+⚠️ Le texte ci-dessous est extrait de la fiche descriptive de la punaise
+diabolique que nous avons préparée pour l’application Agiir (<a
+href="https://ephytia.inrae.fr/fr/C/20532/Agiir-Punaise-diabolique"
+class="uri">https://ephytia.inrae.fr/fr/C/20532/Agiir-Punaise-diabolique</a>).
+</p>
+<div id="critères-de-reconnaissance-de-la-punaise-diabolique"
+class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Critères de
+reconnaissance de la punaise diabolique</h2>
+<p>
+La punaise diabolique, <em>Halyomorpha halys</em> (Stål, 1855),
+appartient au sous-ordre des Hétéroptères. Ceux-ci se reconnaissent à
+leur appareil buccal de type piqueur-suceur (le rostre, ou trompe) et la
+présence d’ailes antérieures constituées de deux parties : une partie
+coriacée (la corie) et une partie membraneuse (membrane), disposées à
+plat sur le dos. La punaise diabolique appartient à la famille des
+Pentatomidae. Le critère de reconnaissance caractéristique de cette
+famille est le scutellum très développé qui s’étend au-delà du milieu de
+l’abdomen (voir la planche des critères de reconnaissance ci-dessous).
+</p>
+<p>
+La punaise diabolique peut être confondue avec d’autres espèces de
+punaises européennes de la même famille, mais elle possède des
+caractéristiques particulières qui permettent de la distinguer.
+</p>
+<div class="success success-custom">
+<p><strong>Cinq critères (tous nécessaires) permettant de reconnaître la
+punaise diabolique adulte :</strong></p>
+<ul>
+<li>Absence d’épine sous l’abdomen</li>
+<li>Antennes foncées avec un anneau clair à la base et au sommet de
+l’article IV et un anneau à la base de l’article V (la disposition est
+importante, deux d’entre eux se touchent)</li>
+<li>Taches brunes allongées sur les membranes des ailes antérieures</li>
+<li>Alternance de blanc et de noir sur les côtés de l’abdomen en face
+dorsale (connexivum)</li>
+<li>Quasiment aucun poil sur la face dorsale</li>
+</ul>
+</div>
+<br>
+<p>
+La punaise diabolique est une punaise de grande taille (12-17mm de
+longueur pour 7-10mm de largeur) de couleur brun grisâtre tirant parfois
+sur le rougeâtre avec une ponctuation foncée. Les larves se distinguent
+des adultes par l’absence d’ailes ou par la présence d’ébauches alaires
+aux stades IV et V. Les antennes des larves ne possèdent que 4 articles
+tandis que l’adulte possède des antennes à 5 articles. À partir du
+deuxième stade de développement, les larves de la punaise diabolique
+possèdent plusieurs critères caractéristiques permettant de les
+distinguer des autres punaises de la famille des Pentatomidae.
+</p>
+<div style="text-align: center;">
+<img src="agiir/Hh/im01.png" title="Halyomorpha halys" alt= "Halyomorpha halys" width=943 style="padding:1px;border:thin solid white" ><legen></legen>
+</div>
+<div class="success success-custom">
+<p><strong>Quatre critères permettant de reconnaître les larves de
+punaise diabolique à partir du stade II :</strong></p>
+<ul>
+<li>Tête rectangulaire avec une paire d’épines devant les yeux</li>
+<li>Antennes noires avec une tache blanche à l’extrémité de l’article
+III</li>
+<li>Une série d’épines sur les côtés du thorax</li>
+<li>Pattes foncées avec des taches blanches</li>
+</ul>
+</div>
+<div style="text-align: center;">
+<img src="agiir/Hh/im02.png" title="Halyomorpha halys" alt= "Halyomorpha halys" width=452 style="padding:1px;border:thin solid white" ><br>
+<legen>Larve d’<em>Halyomorpha halys</em></legen>
+</div>
+<p>
+La planche ci-dessous regroupe plusieurs espèces de punaises européennes
+ressemblant à la punaise diabolique. Les tailles relatives des espèces
+sont respectées.
+</p>
+<div style="text-align: center;">
+<img src="agiir/Hh/im03.png" title="Halyomorpha halys" alt= "Halyomorpha halys" width=593 style="padding:1px;border:thin solid white" ><br><legen>Espèces
+pouvant être confondues avec <em>Halyomorpha halys</em></legen>
+</div>
+</div>
+<div id="cycle-de-développement" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Cycle de
+développement</h2>
+<p>
+Le cycle de vie de la punaise diabolique comprend un stade œuf, cinq
+stades larvaires et un stade adulte. Les œufs sont pondus sous la forme
+de plaques (ooplaques) à la surface des feuilles. Ils sont blanchâtres
+et arrondis. L’éclosion a lieu 3 à 6 jours après la ponte. Les larves de
+stade I restent sur les œufs. Elles sont rouges avec la tête et le
+thorax noirâtres. Les œufs et les larves de premier stade sont
+semblables aux pontes et larves d’autres punaises de taille similaire et
+appartenant à la famille des Pentatomidae. À partir du stade II, les
+larves se déplacent et présentent des caractéristiques morphologiques
+remarquables : une tête rectangulaire avec une paire d’épines devant les
+yeux, des antennes noires avec une tache blanche à l’extrémité de
+l’article III, une série d’épines sur les côtés du thorax et enfin des
+pattes foncées avec des taches blanches.
+</p>
+<div style="text-align: center;">
+<img src="agiir/Hh/im04.png" title="Halyomorpha halys" alt= "Halyomorpha halys" width=943 style="padding:1px;border:thin solid white" ><br><legen>Cycle
+de développement d’<em>Halyomorpha halys</em></legen>
+</div>
+<p>
+En Europe, la punaise diabolique effectue 1 à 2 générations par an, mais
+elle peut en avoir jusqu’à quatre ou plus dans le sud de sa zone
+d’origine, en Chine. Chez les populations qui ne réalisent qu’une seule
+génération par an, les nouveaux adultes ne sont pas immédiatement
+matures sexuellement et ne se reproduisent que l’été suivant. Les
+adultes passent l’hiver dans des abris secs comme les écorces d’arbres
+morts, les crevasses de bâtiments, voire les véhicules ou à l’intérieur
+des maisons. On peut alors assister en automne à des invasions
+spectaculaires causant des nuisances domestiques. En Europe, les adultes
+sortent d’hivernation et commencent à se nourrir dès le mois d’avril. La
+reproduction se déroule durant le printemps et l’été et la ponte des
+œufs a lieu en juin et en août.
+</p>
+</div>
+<div id="plantes-hôtes-et-dégâts" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Plantes hôtes et
+dégâts</h2>
+<p>
+La punaise diabolique est polyphage : on a répertorié plus de 170
+espèces végétales pouvant être consommées. Ces plantes appartiennent à
+de nombreuses familles botaniques. Parmi les plantes hôtes d’intérêt
+économique figurent plusieurs arbres fruitiers, comme les
+<strong>pêchers</strong>, <strong>nectariniers</strong>,
+<strong>pommiers</strong>, <strong>poiriers</strong> ainsi que les
+<strong>noisetiers</strong>, les <strong>kiwis</strong> et la
+<strong>vigne</strong>. Les petits fruits sont également attaqués, ainsi
+que les plantes herbacées telles que les <strong>légumes</strong>, les
+<strong>plantes ornementales</strong> et les <strong>grandes
+cultures</strong> (maïs, soja). La punaise diabolique se nourrit surtout
+des organes reproducteurs de la plante. Elle provoque des marques et des
+déformations sur les fruits lorsqu’elle insère ses stylets pour se
+nourrir. Ces dégâts peuvent entraîner une baisse de rendement suite à
+l’avortement des bourgeons floraux ou à la chute des jeunes fruits.
+</p>
+<p>
+Même de faibles populations peuvent être suffisantes pour causer des
+pertes de récolte importantes. Sur la vigne, il a été montré que la
+punaise diabolique peut affecter la qualité du vin. En effet, lorsque
+les punaises sont présentes sur les grappes de raisins elles peuvent
+être emportées durant la récolte puis broyées avec les baies. Elles
+libèrent alors des substances qui altèrent l’arôme du vin.
+</p>
+<p>
+Actuellement, aux USA, la punaise diabolique cause des dégâts importants
+à de très nombreuses cultures. En Europe, des dégâts ont été signalés à
+partir de 2015 en Italie, spécialement dans le Piémont. En France, les
+premiers dégâts imputés à la punaise ont été signalés en 2018 (vergers
+de kiwi du Sud-Ouest), et en 2019 (Savoie). Depuis 2020, la punaise
+diabolique provoque des dégâts dans l’ensemble du Sud-Est de la France.
+</p>
+</div>
+<div id="contrôle-des-populations-dans-les-cultures"
+class="section level2" number="1.4">
+<h2><span class="header-section-number">1.4</span> Contrôle des
+populations dans les cultures</h2>
+<p>
+Des pistes de recherche sont explorées pour contrôler les dégâts en
+cultures fruitières, comme l’utilisation de filets insect-proof dans les
+vergers pour protéger les fruits des piqûres de punaises. Le suivi des
+populations est réalisé avec des pièges à phéromones. La lutte
+biologique avec des parasitoïdes oophages est également à l’étude :
+<em>Anastatus bifasciatus</em>, qui est présent en France, et plusieurs
+espèces appartenant au genre <em>Trissolcus</em>, sont en cours d’étude.
+</p>
+</div>
+<div id="nuisances-domestiques" class="section level2" number="1.5">
+<h2><span class="header-section-number">1.5</span> Nuisances
+domestiques</h2>
+<p>
+La punaise diabolique est également connue pour les nuisances
+domestiques que causent les adultes lorsqu’ils envahissent, parfois de
+façon très impressionnante, les habitations à l’automne, au moment où
+ils recherchent un abri pour hiverner. Ces infestations sont toutefois
+sans impact sur la santé humaine ou sur celle des animaux : la punaise
+diabolique est inoffensive.
+</p>
+</div>
+<div id="historique-de-linvasion" class="section level2" number="1.6">
+<h2><span class="header-section-number">1.6</span> Historique de
+l’invasion</h2>
+<p>
+La punaise diabolique est originaire d’Asie. Elle est largement répandue
+en Corée, en Chine, au Japon et à Taïwan. Elle a probablement été
+introduite aux États-Unis avant 1998 mais n’a été officiellement
+détectée qu’en 2001 (Pennsylvanie). Elle a ensuite progressivement
+colonisé le Nord de l’Amérique et le Canada. Quelques années plus tard,
+elle était détectée en Europe : en 2004 au Liechtenstein et en Suisse.
+L’invasion s’est ensuite poursuivie dans plus de 20 pays, du Portugal à
+la Turquie, et de la Belgique à l’Italie. La punaise diabolique est
+également présente au Maroc (2019) et en Algérie (2021). Elle a
+également été détectée au Chili en 2017. Plusieurs interceptions ont été
+réalisées lors de contrôles de marchandises aux frontières en Australie,
+Nouvelle Zélande et Nouvelle-Calédonie, mais jusqu’à présent aucune
+population n’a pu s’établir dans ces pays.
+</p>
+<p>
+La punaise diabolique a été observée pour la première fois en France en
+2012, dans la banlieue de Strasbourg. Confondue avec <em>Rhaphigaster
+nebulosa</em> dans un premier temps, elle n’a été signalée
+officiellement qu’en 2013. Sa présence a alors été confirmée en Alsace
+autour de Strasbourg puis quelques spécimens ont été capturés à Paris.
+Depuis la création de l’application Agiir (voir la documentation
+disponible sur notre site) et grâce aux signalements du public, nous
+avons été en mesure de suivre l’expansion de l’insecte en France. En
+quelques années, et particulièrement à partir de 2015, l’invasion s’est
+accélérée et la majorité des départements ont été colonisés. Vous pouvez
+visualiser les résultats de cette étude ci-dessous.
+</p>
+<!-- # Visualiser la carte des signalements AGIIR &#128293;  -->
+<!-- Cliquez sur le lien suivant pour voir la carte de distribution <a href="agiir/Hh/carteHh.html" target="_blank">la punaise diabolique en France</a>).  -->
+<!-- <!-- OK mais lourd -->
+<!-- ```{r, eval=F, echo=F, results=T, warning=F, error=F, message=F, strip.white=T, include=T} -->
+<!-- rm(list=ls()) ; set.seed(1967) -->
+<!-- library(leaflet) ; library(leaflet.extras) ; library(leaflet.extras2) ; library(raster) ; library(sf) -->
+<!-- # lecture et gestion d'un shapefile -->
+<!-- departements <- st_read("/Users/rossi/Documents/sauvegarde/web_cerbere/contenu/carto/ne_10m_admin_1_states_provinces/ne_10m_admin_1_states_provinces.shp", quiet=T) -->
+<!-- # découper la France -->
+<!-- wf <- which(departements$admin=="France") -->
+<!-- departements <- departements[wf,] -->
+<!-- wf <- which(departements$type=="Metropolitan département") # on ne garde que les dpt métropolitains -->
+<!-- departements <- departements[wf,] -->
+<!-- ##--- Données occ -->
+<!-- data <- read.csv("/Users/rossi/Documents/sauvegarde/web_cerbere/contenu/AGIIR/Hh/oo_522847.csv", sep="\t") -->
+<!-- #names(data) -->
+<!-- #sort(unique(data$scientific_name)) -->
+<!-- ##--- retire les points sans date -->
+<!-- w <- which(is.na(data$date)==T) -->
+<!-- data <- data[-w,] -->
+<!-- ##--- création d'une colonne séparant signalements valides et invalides -->
+<!-- w <- which(data$scientific_name=="Halyomorpha halys") #; length(w) -->
+<!-- data$diagnostic <- "Autres" ; data$diagnostic[w] <- "Halyomorpha halys" -->
+<!-- ##--- création d'une colonne annee -->
+<!-- ##--- ATTENTION il faut des character sinon pb plus bas dans attribution aux groupes... -->
+<!-- data$annee <- substr(x=data$date,start=1,stop=4) -->
+<!-- ##--- certaines coordonnées posent problème -->
+<!-- #any(is.na(data$latitude)) -->
+<!-- w <- which(is.na(data$latitude)==T) -->
+<!-- data <- data[-w,] -->
+<!-- ##--- retire les annees NA -->
+<!-- ##w <- which(is.na(data$annee)==T) -->
+<!-- ##data <- data[-w,] -->
+<!-- # names(data) -->
+<!-- # #  [1] "id"                      "latitude"                "longitude"               "scientific_name"         "additional_species" -->
+<!-- # #  [6] "date"                    "verbatim_environment"    "environment"             "identification_support"  "issues" -->
+<!-- # # [11] "initial_duplicated_form" "source"                  "media"                   "note"                    "diagnostic" -->
+<!-- # # [16] "annee" -->
+<!-- ##--- recode en français -->
+<!-- #unique(data$environment) # "garden"     "habitation" "crop"       NA           "urban" -->
+<!-- data$environment2 <- data$environment -->
+<!-- data$environment[data$environment=="garden"] <- "Jardin" -->
+<!-- data$environment[data$environment=="habitation"] <- "Habitation" -->
+<!-- data$environment[data$environment=="crop"] <- "Culture" -->
+<!-- data$environment[data$environment=="urban"] <- "Environnement urbain" -->
+<!-- data$environment[is.na(data$environment)] <- "Environnement non communiqué" -->
+<!-- #dim(data) -->
+<!-- ##--- ici on filtre pour retirer les points associés à des coordonnée (fausses) trop éloignées de la France -->
+<!-- w <- which(data$longitude < -10 | data$longitude > 15) -->
+<!-- data <- data[-w,] -->
+<!-- w <- which(data$latitude < 36 | data$latitude > 53) -->
+<!-- data <- data[-w,] -->
+<!-- temp <- data.frame(lon=data$longitude, lat=data$latitude, scientific_name=data$scientific_name, annee=data$annee, diagnostic=data$diagnostic, date=data$date, environment=data$environment) -->
+<!-- w <- which(temp$scientific_name=="Halyomorpha halys") #; length(w) -->
+<!-- temp1 <- temp[w,] -->
+<!-- temp0 <- temp[-w,] -->
+<!-- #names(temp0) -->
+<!-- # ##--- traduction des points invalides sous la forme de s-f points pour ne pas ralentir l'affichage en tant que points OSM -->
+<!-- # temp0.sf <- st_as_sf(temp0, coords = c("lon","lat"), remove = FALSE) -->
+<!-- # plot(st_geometry(temp0.sf)) -->
+<!-- # head(temp0.sf) -->
+<!-- ##--- configuration icônes -->
+<!-- icon0 <- makeAwesomeIcon(icon = "user", library = "glyphicon", markerColor = "blue", iconColor="black") -->
+<!-- icon1 <- makeAwesomeIcon(icon = "user", library = "glyphicon", markerColor = "red", iconColor="black") -->
+<!-- lab1 <- paste(sep="", data$date, "\n", "environnement : ", data$environment) -->
+<!-- ##--- configuration raster -->
+<!-- opacity1 <- 0.75 ; opacity2 <- 0.5 -->
+<!-- #pal <- colorNumeric("Spectral", pred.fr[], na.color="#00000000") -->
+<!-- col1 <- "white" ; col2 <- "blue" -->
+<!-- colv <- c(col1, col2) -->
+<!-- # ##--- paquets de points par année -->
+<!-- # groupes.liste <- vector(mode="list", length=length(unique(temp1$annee))) -->
+<!-- # for(i in 1:(length(groupes.liste))){ -->
+<!-- #   #cat("groupe : ", unique(data$lab1)[i], "\n") -->
+<!-- #   w <- which(temp1$annee==unique(temp1$annee)[i]) -->
+<!-- #   groupes.liste[[i]] <- temp1[w,] -->
+<!-- # } -->
+<!-- map <- leaflet(width=900, height=700) -->
+<!-- ##--- Ajoute 2 couches OSM -->
+<!-- map <- addTiles(map=map, group = "OSM (default)") -->
+<!-- map <- setView(map=map, lng = 2.5, lat=46.85, zoom=6) -->
+<!-- #map <- addProviderTiles(map=map, providers$OpenTopoMap, group = "Topography") -->
+<!-- ##--- Ajoute les départements -->
+<!-- map <- map %>% addPolygons(data=departements, color = "#444444", fillOpacity = 0.0, group="départements", label = departements$name_fr, weight=1.50) -->
+<!-- # ##--- Ajoute les prédictions du modèle -->
+<!-- # # na.color="#00000000" permet d'avoir les NA du raster en transparent -->
+<!-- # map <- map %>% addRasterImage(x=pred.fr, colors = pal, opacity = opacity1, group="Adéquation climatique") -->
+<!-- map <- addAwesomeMarkers(map=map, lng = temp1$lon, lat = temp1$lat, label=temp1$annee, icon=icon1, popup=lab1) -->
+<!-- map -->
+<!-- # # ##--- première série de points : les valides -->
+<!-- # # for(i in 1:(length(groupes.liste))){ -->
+<!-- # #   #cat("groupe : ", unique(temp1$annee)[i], "\n") -->
+<!-- # #   dtemp <- groupes.liste[[i]] -->
+<!-- # #   map <- addAwesomeMarkers(map=map, lng = dtemp$lon, lat = dtemp$lat, label=dtemp$annee, icon=icon1, popup=lab1) -->
+<!-- # # } -->
+<!-- #  -->
+<!-- # # ##--- Légende -->
+<!-- # # # # # ajoute les labels des overlay groups (ie les points) -->
+<!-- # # # # collapsed = T => les légendes apparaissent ensemble sous l'icone d'un stack -->
+<!-- # # # # collapsed = F => les légendes sont toutes visibles par défaut -->
+<!-- # # map <- map %>% addLayersControl( -->
+<!-- # #     baseGroups = c("Topography","OpenStreetMap"), -->
+<!-- # #     overlayGroups = c("départements", "Adéquation climatique"), -->
+<!-- # #     options = layersControlOptions(collapsed = F, autoZIndex = T)) -->
+<!-- # # # par défaut, n'affiche pas les rasters -->
+<!-- # # map <- map %>% hideGroup("Invalides") %>% hideGroup("Adéquation climatique") -->
+<!-- # # # ajout d'un titre -->
+<!-- # # map <- oceanis::add_titre(map, titre="Signalements valides", sousTitre = "") -->
+<!-- # # map -->
+<!-- # #  -->
+<!-- #  -->
+<!-- #  -->
+<!-- # # -->
+<!-- ``` -->
+<p>Jean-Claude Streito, Marguerite Chartois &amp; Jean-Pierre Rossi</p>
+<hr />
+<p>23 May, 2023</p>
+</div>
+</div>
+
+<!-- </br><p>&copy; 2023 Jean-Pierre Rossi & <b>C</b>ollectif arthropodes <b>R</b>avageurs et r<b>I</b>sque phyto<b>S</b>anitair<b>E</b>.</p> -->
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="" />
+
+
+<title>Le scarabée japonais - Popillia japonica (Newman, 1838)</title>
+
+<script src="site_libs/header-attrs-2.21/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
+<link rel="shortcut icon" href="im0/ladybeetle-32x32.png" />
+
+
+
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">CRISE</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Accueil
+  </a>
+</li>
+<li>
+  <a href="arthemis.html">
+    <span class="fa fa-database"></span>
+     
+    Arthemis
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-bug"></span>
+     
+    AGIIR
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="agiir.html">Présentation</a>
+    </li>
+    <li>
+      <a href="agiir-Aromia-bungii.html">Longicorne à col rouge - Aromia bungii</a>
+    </li>
+    <li>
+      <a href="agiir-Halyomorpha-halys.html">Punaise diabolique - Halyomorpha halys</a>
+    </li>
+    <li>
+      <a href="agiir-Lycorma-delicatula.html">Fulgore tacheté - Lycorma delicatula</a>
+    </li>
+    <li>
+      <a href="agiir-Popillia-japonica.html">Scarabée japonais - Popillia japonica</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-flask"></span>
+     
+    Cartes
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="cartes/carte-Hh.html">Punaise diabolique - Halyomorpha halys</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="publications.html">
+    <span class="fa fa-graduation-cap"></span>
+     
+    Publications
+  </a>
+</li>
+<li>
+  <a href="especes.html">
+    <span class="fa fa-sort-alpha-asc"></span>
+     
+    Espèces
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Le scarabée japonais - <em>Popillia
+japonica</em> (Newman, 1838)</h1>
+<h4 class="author"></h4>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#présentation-de-lespèce"
+id="toc-présentation-de-lespèce"><span
+class="toc-section-number">1</span> Présentation de l’espèce</a>
+<ul>
+<li><a href="#critères-de-reconnaissance-du-scarabée-japonais"
+id="toc-critères-de-reconnaissance-du-scarabée-japonais"><span
+class="toc-section-number">1.1</span> Critères de reconnaissance du
+scarabée japonais</a></li>
+<li><a href="#cycle-de-développement"
+id="toc-cycle-de-développement"><span
+class="toc-section-number">1.2</span> Cycle de développement</a></li>
+<li><a href="#plantes-hôtes-et-dégâts"
+id="toc-plantes-hôtes-et-dégâts"><span
+class="toc-section-number">1.3</span> Plantes hôtes et dégâts</a></li>
+<li><a href="#historique-de-linvasion"
+id="toc-historique-de-linvasion"><span
+class="toc-section-number">1.4</span> Historique de l’invasion</a></li>
+</ul></li>
+</ul>
+</div>
+
+<!-- <species>Le scarabée japonais - *Popillia japonica* (Newman, 1838)</species> -->
+<div id="présentation-de-lespèce" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Présentation de
+l’espèce</h1>
+<p>
+⚠️ Le texte ci-dessous est extrait de la fiche descriptive du scarabée
+japonais que nous avons préparée pour l’application Agiir (<a
+href="https://ephytia.inrae.fr/fr/C/27002/Agiir-Le-scarabee-japonais"
+class="uri">https://ephytia.inrae.fr/fr/C/27002/Agiir-Le-scarabee-japonais</a>).
+</p>
+<div id="critères-de-reconnaissance-du-scarabée-japonais"
+class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Critères de
+reconnaissance du scarabée japonais</h2>
+<p>
+Le scarabée japonais, <em>Popillia japonica</em> (Newman, 1838) est un
+coléoptère : il a des élytres (ailes antérieures coriaces formant une «
+carapace ») et appartient à la famille des Scarabaeidae. Ses antennes
+son terminées par des feuillets mobiles. Le scarabée japonais peut être
+confondu avec plusieurs espèces de scarabées ou de hannetons européens,
+mais il possède des caractéristiques permettant de le différencier.
+</p>
+<div class="success success-custom">
+<p><strong>Quatre critères pour reconnaître le scarabée japonais adulte
+:</strong></p>
+<ul>
+<li>Tête, thorax, abdomen et pattes vert métallique, les élytres brun
+cuivré</li>
+<li>Dessus peu poilu très brillant</li>
+<li>Des rangées de soies blanches sous l’abdomen qui apparaissent de
+dessus sous forme de touffes blanches très caractéristiques</li>
+<li>Taille moyenne : 10 mm environ de long et 6 mm de large</li>
+</ul>
+</div>
+<p><br></p>
+<div style="text-align: center;">
+<img src="agiir/Pj/im01.png" title="Popillia japonica" alt= "Popillia japonica" width=943 style="padding:1px;border:thin solid white" ><legen></legen>
+</div>
+<p>
+La planche ci-dessous regroupe plusieurs espèces de scarabées et de
+hannetons européens qui ressemblent au scarabée japonais. Les tailles
+relatives des espèces est respectée.
+</p>
+<div style="text-align: center;">
+<img src="agiir/Pj/im02.png" title="Popillia japonica" alt= "Popillia japonica" width=943 style="padding:1px;border:thin solid white" ><legen></legen>
+</div>
+</div>
+<div id="cycle-de-développement" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Cycle de
+développement</h2>
+<p>
+Le cycle du scarabée japonais comprend un stade œuf, trois stades
+larvaires, un stade nymphal et le stade adulte. Le cycle de vie du
+scarabée japonais dure un an, voire deux ans dans des régions les plus
+froides. Les œufs sont ovales, blanc crème et mesurent environ 1,5 mm.
+Ils sont pondus dans le sol jusqu’à 10 cm de profondeur par petits
+groupes de 2 à 4. Les larves sont des vers blancs avec des pattes
+brunes. Elles sont très difficiles à distinguer de larves des autres
+scarabées. Elles vivent dans le sol où elles se nourrissent de racines.
+Lorsqu’elles ont atteint leur développement complet, elles mesurent
+environ 25 mm. La nymphe est blanc ivoire et mesure environ 14 mm.
+</p>
+<p>
+Les larves passent l’hiver enfouies dans le sol entre 25 et 30 cm de
+profondeur. Elles y sont à l’abri du gel et entrent en vie ralentie et
+cessent de se nourrir. Au printemps, les larves remontent dans le sol à
+5 cm de la surface et se nourrissent de racines avant de se nymphoser.
+Elles passent entre 4 à 6 semaines au stade de nymphe.
+</p>
+<p>
+Les adultes émergent entre la mi-mai et début juillet et vivent entre 30
+et 45 jours. Ils commencent à voler lorsque la température atteint
+environ 21°C. Leur activité est réduite lors des jours venteux, pluvieux
+ou nuageux. Entre 7 et 10 jours après émergence, ils se nourrissent sur
+des arbres fruitiers, arbres d’ombrage et sur des plantes cultivées. Les
+femelles pondent ensuite entre 40 et 60 œufs dans le sol, jusqu’à 10 cm
+de profondeur, groupés par paquets de 2 à 4 œufs. Les larves éclosent 2
+semaines plus tard.
+</p>
+</div>
+<div id="plantes-hôtes-et-dégâts" class="section level2" number="1.3">
+<h2><span class="header-section-number">1.3</span> Plantes hôtes et
+dégâts</h2>
+<p>
+<em>Popillia japonica</em> est polyphage et s’attaque à différentes
+plantes des jardins, espaces verts, forêts et cultures, par exemple
+l’arboriculture fruitière (fruits à coque, fruits à noyau (dont
+amandier), fruits à pépins, petits fruits), les cultures légumières
+(fraisier), les bois et forêts (érables, marronnier, bouleau,
+châtaignier, noyer, platane, peupliers, Prunus spp., rosier, saules,
+tilleul, orme), les grandes cultures (cultures industrielles et
+fourragères, maïs), jardins et espaces verts (jardins, gazons…) et la
+vigne.
+<p>
+<p>
+Le scarabée japonais adulte se nourrit des feuilles en ne laissant que
+les nervures. Les dégâts sont caractéristiques : les feuilles des
+plantes attaquées sont découpées en dentelle. Les feuilles finissent par
+brunir et tomber. Le scarabée japonais peut également s’attaquer aux
+fleurs, par exemple aux étamines de maïs et empêcher les épis de se
+former correctement. Les larves se nourrissent surtout de racines de
+graminées (par exemple de gazon) mais peuvent également s’attaquer aux
+racines de fraisiers, de tomates, de maïs et de soja.
+<p>
+</div>
+<div id="historique-de-linvasion" class="section level2" number="1.4">
+<h2><span class="header-section-number">1.4</span> Historique de
+l’invasion</h2>
+<p>
+<em>Popillia japonica</em> est originaire du Japon. Il a été détecté
+pour la première fois aux États-Unis (New Jersey) en 1916 où il s’est
+progressivement établi, et a atteint le Canada en 1939. Il a été
+introduit accidentellement aux Açores (Portugal), sur l’île Terceira en
+1980 puis s’est propagé sur les îles de Faial, Flores, Pico, São Jorge,
+Corvo et São Miguel. Il a été officiellement signalé pour la première
+fois en 2014 dans les régions de Lombardie et Piémont en Italie,
+toutefois des photos prises dès janvier 2012 attestent d’une
+introduction antérieure. Considérant l’étendue de la zone géographique
+où il a pu s’implanter, son éradication est désormais considérée comme
+impossible.
+<p>
+<p>
+Plusieurs observations ont été signalées en Asie depuis 2011 : Vietnam
+(2011), Bhutan (2015), Chine et Taïwan (2020), Corée du Sud (2020). Le
+scarabée japonais a récemment été détecté au sud du Tassin (dans la
+commune de Novazzano) en Suisse au cours de l’été 2020 dans un vignoble,
+et en Angleterre la même année. Il est classé comme danger sanitaire de
+catégorie 1 présentant un risque majeur sur le plan environnemental, il
+est donc interdit d’introduction et de circulation en Europe.
+</p>
+<!-- # Visualiser la carte des signalements AGIIR &#128293;  -->
+<p>Jean-Claude Streito &amp; Marguerite Chartois</p>
+<hr />
+<p>23 May, 2023</p>
+</div>
+</div>
+
+<!-- </br><p>&copy; 2023 Jean-Pierre Rossi & <b>C</b>ollectif arthropodes <b>R</b>avageurs et r<b>I</b>sque phyto<b>S</b>anitair<b>E</b>.</p> -->
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
